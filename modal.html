@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      #backdrop {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        display: none;
+      }
+      #modal {
+        border-radius: 15px;
+        position: absolute;
+        top: -350px;
+        left: 30%;
+        width: 40%;
+        background-color: #333;
+        height: 300px;
+        transition: top 0.5s;
+        /* display: none; */
+      }
+      #modal h2 {
+        /* margin-top: auto; */
+        background: #222;
+        padding: 25px;
+        color: white;
+        margin: 0;
+        border-radius: 15px 15px 0 0;
+        font-size: 1em;
+        /* align-items: center; */
+      }
+      #modal h2 a {
+        color: red;
+        text-decoration: none;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Home Page</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe
+      magnam minima quidem ratione odit nulla minus dolorem illum, possimus quam
+      ipsum aliquam quis obcaecati cupiditate quia laboriosam veniam distinctio
+      doloremque. Quo vel voluptatum odit optio modi, obcaecati amet, architecto
+      eaque nihil voluptate delectus minima ad quisquam? Praesentium, incidunt
+      est.
+    </p>
+
+    <div id="backdrop" onclick="hide()"></div>
+    <div id="modal">
+      <h2>
+        Modal Title
+        <a href="#" onclick="hide()">&times;</a>
+      </h2>
+    </div>
+
+    <script>
+      function show() {
+        document.querySelector("#backdrop").style.display = "block";
+      }
+    </script> -->
+
+    <h1>Home Page</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam minima
+      earum eaque libero vel culpa! Obcaecati, nesciunt. Architecto, quia
+      accusantium? Illo, eos nihil optio recusandae natus repudiandae facere ab
+      facilis a quod nam hic in! Incidunt at ullam voluptate minus
+      exercitationem nam repellendus harum magnam, perferendis nesciunt,
+      accusamus illum similique architecto? Dolorum repellendus illo dolores
+      beatae sit molestiae sapiente vel maxime! Saepe, aut provident laboriosam
+      amet, ad qui consequatur fugit animi blanditiis, id magnam iste? Soluta
+      totam ipsum alias molestias ab aliquid animi commodi quam beatae nisi!
+      Porro nesciunt eum necessitatibus repellendus veritatis hic facere libero
+      nobis animi fugit?
+    </p>
+    <button onclick="show()">Button</button>
+
+    <div id="backdrop" onclick="hide()"></div>
+    <div id="modal">
+      <h2>
+        Modal Title
+        <a href="#" onclick="hide()">&times;</a>
+      </h2>
+    </div>
+
+    <script>
+      function show() {
+        document.querySelector("#backdrop").style.display = "block";
+        document.querySelector("#modal").style.top = "15%";
+      }
+
+      function hide() {
+        document.querySelector("#backdrop").style.display = "none";
+        document.querySelector("#modal").style.top = "-350px";
+      }
+    </script>
+  </body>
+</html>
