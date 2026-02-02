@@ -30,6 +30,32 @@
         p.style.padding = "20px";
         p.style.borderLeft = "5px solid blue";
       }
+
+      let num = [1, 2, 3, 4, 5];
+      let result = num.map((n) => {
+        return n + 2;
+      }); // let result = num.map(n=>n+2);
+
+      let filterResult = num.filter((n) => {
+        return n % 2 != 0;
+      }); // let result = num.filter(n => n%2 ==0)
+    </script>
+
+    <script>
+      let data = [
+        { name: "Alice", age: 22 },
+        { name: "Bob", age: 19 },
+        { name: "Chris", age: 18 },
+        { name: "Dave", age: 20 },
+        { name: "Eve", age: 24 },
+      ];
+
+      let name = data.map((user) => user.name);
+      let u20 = data.filter((user) => user.age <= 20);
+
+      let resultData = data
+        .filter((user) => user.age <= 20)
+        .map((user) => user.name);
     </script>
   </body>
 </html>
