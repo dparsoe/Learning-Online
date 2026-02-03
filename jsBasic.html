@@ -21,7 +21,16 @@
 
     <p>Lorem ipsum dolor sit amet.</p>
     <button onclick="hello()">Button</button>
+    <script>
+      var nums = [1, 2, 3, 4, 5];
 
+      // var result = [];
+      // for (let i = 0; i < nums.length; i++) {
+      //   result.push(nums[i] + 1);
+      // }
+
+      let results = nums.map((n) => n * 3);
+    </script>
     <script>
       function hello() {
         var p = document.querySelector("p");
@@ -56,6 +65,31 @@
       let resultData = data
         .filter((user) => user.age <= 20)
         .map((user) => user.name);
+
+      //object lateral
+      let user = {
+        name: "Alice",
+        hello: function () {
+          console.log(`Hello ${this.name}`);
+        },
+      };
+
+      class animal {
+        constructor(name) {
+          this.name = name;
+        }
+
+        hello() {
+          console.log(`Hello ${this.name}`);
+        }
+      }
+
+      class Dog extends animal {
+        run() {
+          console.log(`${this.name} is running`);
+        }
+      }
+      let dog = new Dog("Bobby");
     </script>
   </body>
 </html>
